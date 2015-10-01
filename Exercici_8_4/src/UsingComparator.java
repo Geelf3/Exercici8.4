@@ -1,6 +1,10 @@
 
 public class UsingComparator extends Cotxe implements Comparable<Object> {
 	
+	public UsingComparator(String marca, String model, int cilindrada, int cilindres){
+		super(marca, model, cilindrada, cilindres);
+	}
+	
 	// Create the comparator method.
 	@Override
 	public int compareTo(Object obj) {

@@ -61,4 +61,8 @@ public class Cotxe {
 	public double calculaPotFis() {
 		return (0.08 * this.cilindres * Math.pow((this.cilindrada / this.cilindres), 0.6));
 	}
+	public String toString() {
+		return "El cotxe de marca " + getMarca() + " i model " + getModel() + " té " + getCilindrada() + " de cilindrada i " 
+				+ getCilindres() + " cilindres";
+	} 
 }
