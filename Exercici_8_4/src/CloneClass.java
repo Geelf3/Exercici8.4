@@ -39,10 +39,20 @@ public class CloneClass {
 		llistaPrioCotxe.add(new UsingComparator("Fiat", "Panda", 900, 2));
 		
 		// 4: show both queues sorted.
-		while(!llistaPrioCotxe2.isEmpty()) {
+		
+		System.out.println("-------LIFO-------");
+		while(!lifoAutos.isEmpty()) {
 			System.out.println(lifoAutos.pollLast());
+
+		}
+		System.out.println("---------FIFO--------");
+		while(!fifoAutos.isEmpty()) {
 			System.out.println(fifoAutos.pollFirst());
-			System.out.println(llistaPrioCotxe2.poll());
+		}
+		System.out.println("---------PrioQ----------");
+		while(!llistaPrioCotxe.isEmpty()) {
+			System.out.println(llistaPrioCotxe.poll());
+			
 		}
 		
 		// 5: Example in real life a lifo and fifo.
